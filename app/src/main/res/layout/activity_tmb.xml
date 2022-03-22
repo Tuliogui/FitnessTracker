@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/taxametabolica">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:context=".ImcActivity">
+
+        <TextView
+            android:text="@string/tmb_desc"
+            style="@style/TextViewForm"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edit_tmb_weight"
+            android:hint="@string/weight"
+            style="@style/EditTextForm"
+            />
+
+        <EditText
+            android:id="@+id/edit_tmb_height"
+            android:hint="@string/height"
+            style="@style/EditTextForm"/>
+
+        <EditText
+            android:id="@+id/edit_tmb_age"
+            android:hint="@string/age"
+            style="@style/EditTextForm"/>
+
+        <Spinner
+            android:id="@+id/spinner_tmb_lifestyle"
+            android:entries="@array/tmb_lifestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SpinnerForm"/>
+
+        <Button
+            android:id="@+id/btn_tmb_send"
+            android:text="@string/calc"
+            style="@style/ButtonForm"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
